@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>User Vaccinations</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" href="{{ url_for('static', filename='img/cs.ico') }}">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/vaccine.css') }}">
+
+    </head>
+
+    <body>
+        
+
+    <main role="main" class="container extra-bottom">
+        <h1 class="mt-5">Vaccinations</h1>
+    </main>
+     
+      
+      
+  
+      
+    <div class="container">    
+        
+        <!-- Button trigger modal -->
+        <div style="text-align: right;">
+            <button style='float: left;' type="button" class="btn btn-outline-info btn-sm"><a href="../../profile/{{user_id}}">Go Back</a></button>
+            <button type="button" class="btn btn-outline-info btn-sm" data-bs-toggle="modal" data-bs-target="#vaccination-modal" data-source="New vaccination">Add Vaccination</button>
+            </div>
+    
+            
+            <div class="modal fade" id="vaccination-modal" tabindex="-1" aria-labelledby="Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="Label">Add vaccination</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+
+            <div class="modal-body">
+
+                
+                
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="vaccination-form-display">vaccine brand</span>
+                    <select class="vac-control" id = "vaccine_brand"  aria-label="vaccination-name" aria-describedby="basic-addon3">
+                        <option value="Johnson & Johnson">Johnson & Johnson</option>
+                        <option value="Moderna">Moderna</option>
+                        <option value="Pfizer">Pfizer</option>
+                    </select>
+                </div>
+                
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="vaccination-form-display">vaccine date</span> 
+                    <input type="date" class="vac-control" id = "vaccine_date" aria-label="vaccination-name" aria-describedby="basic-addon4">
+                </div>
+
+            </div>
+            
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button id="submit-vaccination" type="button" data-source= "{{user_id}}" class="btn btn-primary">Add vaccination</button>
+            </div>
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+    <!--Todo Table-->
+    <div class="container table-responsive">          
+        <table class="table">
+            <thead>
+            <tr>
+                <th class="vac_id">vaccine id</th>
+                <th class="vaccine_brand">vaccine brand</th>
+                <th class="vaccine_date">vaccine date</th> 
+                <th class="update">Edit</th>
+                <th class="update">Remove</th>
+            </tr>
+            </thead>
+    
+            <tbody>
+            {% for item in vaccinations %}
+                <tr class="query-rows" data-refId = "@item.key">
+                    <td>{{item.vac_id}}</td>
+                    <td>{{item.vaccine_brand}}</td>
+                    <td>{{item.vaccine_date}}</td>
+                    
+                    <td><button type="button" class="btn btn-outline-info btn-sm" data-bs-toggle="modal" data-bs-target="#vaccination-modal" data-source="{{item.vac_id}}" data-content="{{item}}"><i class="fa fa-pen fa-1" aria-hidden="true"></i></button></td>
+    
+                    <td><button class="btn btn-outline-secondary btn-sm removev" data-source="{{item.vac_id}}" type="button"><i class="fa fa-trash fa-1" aria-hidden="true"></i></button></td>
+                </tr>
+            {% endfor %}
+            
+            </tbody>
+        </table>
+        </div>
+  
+
+
+
+
+
+
+
+
+    <footer class="footer">
+      <div class="container">
+            <p class="text-muted"><small>App developed for CS411 UIUC by @vchalla3</small></p>
+      </div>
+    </footer>
+  </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='script/test_results_page.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="{{ url_for('static', filename='script/vaccination_page.js') }}"></script>
+</html>

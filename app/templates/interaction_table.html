@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Demo: TODO</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" href="{{ url_for('static', filename='img/cs.ico') }}">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/interactions_1.css') }}">
+
+    </head>
+
+    <body>
+
+    <main role="main" class="container extra-bottom">
+      <h1 class="mt-5">{{user.first_name}} {{user.last_name}}'s Interactions</h1>
+    </main>
+
+    
+    <div style="text-align: right;">
+        <button style='float: left;' type="button" class="btn btn-outline-info btn-sm"><a href="https://covid-status-tracker-307120.uc.r.appspot.com/profile/{{user.user_id}}">Go Back</a></button>
+        </div>
+
+    <div class="container">    
+
+        <label for="start">Date: </label>
+        <label for="start">Shows the last 7 days interactions from the selected date</label>
+
+        <div style="text-align: center;"></div> 
+        
+        <input type="date" id="date" name="date" value="2021-01-01" min="2020-01-01" max="2022-12-31">
+        <!-- <input type="submit" class="button -green center"> -->
+        <button id="date_search" data-source="{{user.user_id}}">Search</button>
+        
+    
+          
+               
+  <!-- <h2>Search the interactions</h2>
+      
+        <div style="text-align: center;"></div> 
+        <form>
+        <input type="search" id="mysearch" name="search" placeholder="Search for the information...">
+        <button id="mysearch1">Search</button>
+        </form> -->
+
+
+        <!-- Button trigger modal -->
+        <!-- <div style="text-align: right;">
+        <button type="button" class="btn btn-outline-info btn-sm" data-bs-toggle="modal" data-bs-target="#task-modal" data-source="New Interactions">New Interactions</button>
+        </div> -->
+
+        
+        <div class="modal fade" id="task-modal2" tabindex="-1" aria-labelledby="Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="Label">Add Interactions</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+    
+                <div class="modal-body">
+    
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="task-form-display2">lists[0]</span>
+                        <input type="text" class="form-control2" id="id11" placeholder="day1" aria-label="task-name" aria-describedby="basic-addon1">
+                    </div>
+    
+                    <div class="input-group mb-3">
+                        <span label for="recipient-name" class="input-group-text" id="task-form-display2">Day2</span>
+                        <input type="text" class="form-control2" id="id22" placeholder="day2" aria-label="task-name" aria-describedby="basic-addon1">
+                    </div>
+                    
+                    
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="task-form-display2">Day3</span>
+                        <input type="text" class="form-control2" id="id33" placeholder="day3" aria-label="task-name" aria-describedby="basic-addon1">
+                    </div>
+    
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="task-form-display2">Day4</span>
+                        <input type="text" class="form-control2" id="id44" placeholder="day4" aria-label="task-name" aria-describedby="basic-addon1">
+                    </div>
+    
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="task-form-display2">Day5</span>
+                        <input type="text" class="form-control2" id="id55" placeholder="day5" aria-label="task-name" aria-describedby="basic-addon1">
+                    </div>
+    
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="task-form-display2">Day6</span>
+                        <input type="text" class="form-control2" id="id66" placeholder="day6" aria-label="task-name" aria-describedby="basic-addon1">
+                    </div>
+    
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="task-form-display2">Day7</span>
+                        <input type="text" class="form-control2" id="id77" placeholder="day7" aria-label="task-name" aria-describedby="basic-addon1">
+                    </div>
+    
+    
+    
+                </div>
+                
+    
+    
+    
+    
+    
+    
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button id="submit-task2" type="button" class="btn btn-primary">Save changes</button>
+                </div>
+                </div>
+            </div>
+            </div>
+    
+        </div>
+    
+        <!--Todo Table-->
+        <div class="container table-responsive">          
+        <table class="table">
+            <thead>
+            <tr>
+                <th class="task-id">{{lists[0]}}</th>
+                <th class="date">{{lists[1]}}</th>
+                <th class="date">{{lists[2]}}</th>
+                <th class="date">{{lists[3]}}</th>
+                <th class="date">{{lists[4]}}</th>
+                <th class="date">{{lists[5]}}</th>
+                <th class="date">{{lists[6]}}</th>
+                <!-- <th class="location">location</th>
+                <th class="notes">notes</th>
+                <th class="bubble">bubble_id</th> -->
+    
+                <!-- <th class="status">Status</th> -->
+                <!-- <th class="update">Edit</th>
+                <th class="update">Remove</th> -->
+            </tr>
+            </thead>
+    
+            <tbody>
+            {% for item in items %}
+                <tr>
+                    <td>{{item.Day1}}</td>
+                    <td>{{item.Day2}}</td>
+                    <td>{{item.Day3}}</td>
+                    <td>{{item.Day4}}</td>
+                    <td>{{item.Day5}}</td>
+                    <td>{{item.Day6}}</td>
+                    <td>{{item.Day7}}</td>
+    
+                    <!-- {% if item.status == "In Progress" %}
+                        <td><button type="button" class="btn btn-outline-warning btn-sm state" data-source="{{item.id}}">{{item.status}}</button></td>
+                    {%endif%}
+                    {% if item.status == "Todo" %}
+                        <td><button type="button" class="btn btn-outline-secondary btn-sm state" data-source="{{item.id}}">{{item.status}}</button></td>
+                    {%endif%}
+                    {% if item.status == "Complete" %}
+                        <td><button type="button" class="btn btn-outline-success btn-sm state" data-source="{{item.id}}">{{item.status}}</button></td>
+                    {%endif%} -->
+                    
+                    <!-- <td><button type="button" class="btn btn-outline-info btn-sm" data-bs-toggle="modal" data-bs-target="#task-modal" data-source="{{item.interaction_id}}" data-content="{{item.task}}"><i class="fa fa-pen fa-1" aria-hidden="true"></i></button></td> -->
+    
+                    <!-- <td><button class="btn btn-outline-secondary btn-sm remove" data-source="{{item.interaction_id}}" type="button"><i class="fa fa-trash fa-1" aria-hidden="true"></i></button></td> -->
+                </tr>
+            {% endfor %}
+            
+            </tbody>
+        </table>
+        </div>
+    
+        <!-- Starts -->
+        <div class="container">    
+    
+            
+                   
+            <!-- <h2>Search the interactions</h2>
+          
+            <div style="text-align: center;"></div> 
+            <form>
+            <input type="search" id="table" name="search" placeholder="Search for the information...">
+            <button id="table_search">Search Location</button>
+            </form> -->
+    
+            <!-- <div style="text-align: right;" >
+            <a href="http://127.0.0.1:5000/query" class="button">How close are users?</a>
+            </div> -->
+    
+            <!-- Button trigger modal -->
+            <div style="text-align: right;">
+            <button type="button" class="btn btn-outline-info btn-sm" data-bs-toggle="modal" data-bs-target="#task-modal" data-source="New Interactions">New Interactions</button>
+            </div>
+    
+            
+            <div class="modal fade" id="task-modal" tabindex="-1" aria-labelledby="Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="Label">Add Interactions</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+    
+                <div class="modal-body">
+    
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="task-form-display">interaction_date</span>
+                        <input type="date" class="form-control" id="id1" aria-label="task-name" aria-describedby="basic-addon1">
+                    </div>
+    
+                    <div class="input-group mb-3">
+                        <span label for="recipient-name" class="input-group-text" id="task-form-display">location</span>
+                        <input type="text" class="form-control" id="id2" placeholder="location for interaction" aria-label="task-name1" aria-describedby="basic-addon1">
+                    </div>
+                    
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="task-form-display">notes</span>
+                        <input type="text" class="form-control" id="id3" placeholder="notes of interaction" aria-label="task-name" aria-describedby="basic-addon1">
+                    </div>
+    
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="task-form-display">Select Bubble</span>
+                        <select class="form-control" id="id4"  aria-label="task-name" aria-describedby="basic-addon1">
+                            {% for bubble in bubbles %}
+                                <option value="{{bubble.bubble_id}}">Bubble #{{bubble.bubble_id}}: {{bubble.bubble_name}}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+    
+    
+    
+                </div>
+                
+    
+    
+    
+    
+    
+    
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button id="submit-task" type="button" class="btn btn-primary" data-source="{{user.user_id}}">Save changes</button>
+                </div>
+                </div>
+            </div>
+            </div>
+    
+        </div>
+    
+        <div class="container table-responsive">          
+            <table class="table">
+                <thead>
+                <tr>
+                    <th class="task-id">Interaction Id</th>
+                    <th class="date">Interaction Date</th>
+                    <th class="location">Location</th>
+                    <th class="notes">Notes</th>
+                    <th class="bubble">Bubble ID</th>
+                    <th class="bubble">Bubble Name</th>
+        
+                    <!-- <th class="status">Status</th> -->
+                    <th class="update">Edit</th>
+                    <th class="update">Remove</th>
+                </tr>
+                </thead>
+        
+                <tbody>
+                {% for item in items2 %}
+                    <tr>
+                        <td>{{item.interaction_id}}</td>
+                        <td>{{item.interaction_date}}</td>
+                        <td>{{item.location}}</td>
+                        <td>{{item.notes}}</td>
+                        <td>{{item.bubble_id}}</td>
+                        <td>{{item.bubble_name}}</td>
+                        
+        
+                        <!-- {% if item.status == "In Progress" %}
+                            <td><button type="button" class="btn btn-outline-warning btn-sm state" data-source="{{item.id}}">{{item.status}}</button></td>
+                        {%endif%}
+                        {% if item.status == "Todo" %}
+                            <td><button type="button" class="btn btn-outline-secondary btn-sm state" data-source="{{item.id}}">{{item.status}}</button></td>
+                        {%endif%}
+                        {% if item.status == "Complete" %}
+                            <td><button type="button" class="btn btn-outline-success btn-sm state" data-source="{{item.id}}">{{item.status}}</button></td>
+                        {%endif%} -->
+                        
+                        <td><button type="button" class="btn btn-outline-info btn-sm" data-bs-toggle="modal" data-bs-target="#task-modal" data-source="{{item.interaction_id}}" data-content="{{item.task}}"><i class="fa fa-pen fa-1" aria-hidden="true"></i></button></td>
+        
+                        <td><button class="btn btn-outline-secondary btn-sm remove" data-source="{{item.interaction_id}}" type="button"><i class="fa fa-trash fa-1" aria-hidden="true"></i></button></td>
+                    </tr>
+                {% endfor %}
+                
+                </tbody>
+            </table>
+            </div>
+    <!-- Ends     -->
+    
+    
+    
+    
+    
+    
+    
+    
+        <footer class="footer">
+          <div class="container">
+                <p class="text-muted"><small>App developed for CS411 UIUC by Group 47</small></p>
+          </div>
+        </footer>
+      </body>
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        <script src="{{ url_for('static', filename='script/interactions.js') }}"></script>
+    
+    </html>
+    

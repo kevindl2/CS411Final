@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>{{bubble.bubble_name}}</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" href="{{ url_for('static', filename='img/cs.ico') }}">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/bubbles.css') }}">
+
+    </head>
+
+    <body>
+
+    <main role="main" class="container extra-bottom">
+      <h1 class="mt-5">Bubble Name: {{bubble.bubble_name}}</h1>
+      <h4>Bubble Description: {{bubble.description}}</h4>
+      <p hidden id="bubble_id">{{bubble.bubble_id}}</p>
+      <p hidden id="user_id">{{user_id}}</p>
+    </main>
+    
+
+    <div class="container">    
+        
+        <!-- Button trigger modal -->
+        <div style="text-align: right;">
+        <button style='float: left;' type="button" class="btn btn-outline-info btn-sm"><a href="../../user-bubbles/{{user_id}}">Go Back</a></button>
+        <button type="button" class="btn btn-outline-info btn-sm" data-bs-toggle="modal" data-bs-target="#add-users-modal" data-source="Add Users">Add Users</button>
+        <button type="button" class="btn btn-outline-info btn-sm" data-bs-toggle="modal" data-bs-target="#edit-bubble-modal" data-source="Edit Bubble">Edit Bubble</button>
+        </div>
+
+        
+        <div class="modal fade" id="edit-bubble-modal" tabindex="-1" aria-labelledby="Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="Label">Edit Bubble</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="edit-bubble-form-display">Bubble Name</span>
+                    <input id="bubble_name" type="text" class="form-control" value="{{bubble.bubble_name}}" aria-label="bubble-name" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="edit-bubble-form-display">Bubble Description</span>
+                    <input id="bubble_description" type="text" class="form-control" value="{{bubble.description}}" aria-label="bubble-description" aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button id="edit-bubble" type="button" class="btn btn-primary">Save Bubble</button>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="modal fade" id="add-users-modal" tabindex="-1" aria-labelledby="Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="Label">Add Users</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+    
+                <div class="modal-body">
+                    <div class="input-group">
+                        <span class="input-group-text">Search For Users</span>
+                        <div class="form-outline">
+                          <input type="search" id="search-form" class="form-control" />
+                        </div>
+                        <button id='user-search' type="button" class="btn btn-primary">
+                          <i class="fas fa-search"></i>
+                        </button>
+                      </div>
+                      
+                      <div class="container table-responsive">          
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th class="user-id">User ID</th>
+                                    <th class="user-first-name">First Name</th>
+                                    <th class="user-last-name">Last Name</th>
+                                    <th class="select-user">Select User</th>
+                                </tr>
+                                </thead>
+                        
+                                <tbody id='add-users-table'></tbody>
+                            </table>
+                        
+                        </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button id="add-users" type="button" class="btn btn-primary">Add Selected Users</button>
+                </div>
+                </div>
+            </div>
+            </div>
+
+    </div>
+
+    <!--Users-->
+    <div class="container table-responsive">          
+    <table class="table">
+        <thead>
+        <tr>
+            <th class="user-id">User ID</th>
+            <th class="user-first-name">First Name</th>
+            <th class="user-last-name">Last Name</th>
+            <th class="remove-user">Remove User</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        {% for user in users %}
+            <tr>
+                <td>{{user.user_id}}</td>
+                <td>{{user.first_name}}</td>
+                <td>{{user.last_name}}</td>
+                <td><button class="btn btn-outline-secondary btn-sm remove" data-source="{{user.user_id}}" type="button"><i class="fa fa-trash fa-1" aria-hidden="true"></i></button></td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    </div>
+
+  </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='script/bubble_page.js') }}"></script>
+
+</html>

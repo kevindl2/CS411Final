@@ -1,0 +1,954 @@
+vac_id,user_id,vaccine_brand,vaccine_date
+0,JosephPatterson,Pfizer,2020-03-13
+1,JosephPatterson,Pfizer,2020-04-03
+2,LarryCulver,Johnson & Johnson,2020-03-15
+3,LarryCulver,Johnson & Johnson,2020-04-05
+4,AmandaCrasco,Moderna,2020-11-10
+5,DouglasLovell,Moderna,2020-04-03
+6,DouglasLovell,Moderna,2020-04-24
+7,MarioGause,Pfizer,2020-05-07
+8,MarioGause,Pfizer,2020-05-28
+9,AlidaSmith,Johnson & Johnson,2021-03-01
+10,ErwinTipton,Moderna,2020-08-05
+11,DavidReynolds,Pfizer,2020-10-03
+12,DavidReynolds,Pfizer,2020-10-24
+13,RobertWeekley,Pfizer,2020-08-18
+14,RobertWeekley,Pfizer,2020-09-08
+15,ElizabethWatson,Moderna,2020-05-03
+16,JocelynTalerico,Johnson & Johnson,2020-06-16
+17,JocelynTalerico,Johnson & Johnson,2020-07-07
+18,MabelBrueckman,Johnson & Johnson,2020-04-04
+19,MabelBrueckman,Johnson & Johnson,2020-04-25
+20,AnnaMayer,Johnson & Johnson,2020-03-15
+21,DamienLucas,Johnson & Johnson,2020-06-15
+22,ConnieAlcantara,Johnson & Johnson,2020-10-27
+23,KevinMartin,Pfizer,2020-11-24
+24,DarlaRowland,Johnson & Johnson,2020-09-17
+25,DarlaRowland,Johnson & Johnson,2020-10-08
+26,SandraShuford,Moderna,2020-04-12
+27,MildredGulke,Moderna,2020-11-21
+28,KatieBailey,Moderna,2020-10-19
+29,KatieBailey,Moderna,2020-11-09
+30,GladysMotley,Johnson & Johnson,2020-09-18
+31,GladysMotley,Johnson & Johnson,2020-10-09
+32,AubreyCole,Pfizer,2020-09-02
+33,StanleyMead,Johnson & Johnson,2020-11-07
+34,JamesWorthy,Pfizer,2021-01-04
+35,JamesWorthy,Pfizer,2021-01-25
+36,LavondaGreenwood,Johnson & Johnson,2020-07-15
+37,JohnMurray,Moderna,2020-12-17
+38,TimothyHumphreys,Johnson & Johnson,2020-06-22
+39,MaryEndicott,Moderna,2020-03-14
+40,MaryEndicott,Moderna,2020-04-04
+41,LindseyCalzada,Moderna,2020-03-29
+42,GeorgeWu,Moderna,2020-04-10
+43,GeorgeWu,Moderna,2020-05-01
+44,BillieNash,Pfizer,2020-12-14
+45,DanielIsaacs,Moderna,2020-12-29
+46,DanielIsaacs,Moderna,2021-01-19
+47,MatthewLotzer,Johnson & Johnson,2020-03-31
+48,DoyleMiller,Moderna,2021-03-04
+49,GeorgeSpicher,Moderna,2020-06-26
+50,GeorgeSpicher,Moderna,2020-07-17
+51,EdwardHanlon,Pfizer,2020-03-15
+52,EdwardHanlon,Pfizer,2020-04-05
+53,TreyMendoza,Moderna,2020-06-22
+54,DorothyHenderson,Pfizer,2021-01-17
+55,DorothyHenderson,Pfizer,2021-02-07
+56,KarenCaldwell,Pfizer,2020-05-14
+57,KarenCaldwell,Pfizer,2020-06-04
+58,JamesCleary,Pfizer,2021-01-28
+59,EloiseTaylor,Moderna,2021-03-03
+60,RaymondMunoz,Moderna,2020-10-27
+61,CynthiaRoth,Johnson & Johnson,2020-06-07
+62,EasterCaminero,Pfizer,2020-08-31
+63,EasterCaminero,Pfizer,2020-09-21
+64,BarbaraPecanty,Johnson & Johnson,2020-08-14
+65,LoriWilliams,Moderna,2020-05-16
+66,LoriWilliams,Moderna,2020-06-06
+67,JohnDenney,Johnson & Johnson,2020-11-22
+68,JohnDenney,Johnson & Johnson,2020-12-13
+69,EzraBrady,Johnson & Johnson,2021-02-21
+70,RalphRosales,Moderna,2020-10-25
+71,DeniseGreen,Moderna,2020-08-17
+72,DeniseGreen,Moderna,2020-09-07
+73,AmyJewell,Pfizer,2020-08-12
+74,GeorgeGambrell,Pfizer,2020-12-07
+75,GeorgeGambrell,Pfizer,2020-12-28
+76,AnaLarue,Johnson & Johnson,2020-06-29
+77,AnaLarue,Johnson & Johnson,2020-07-20
+78,DonaldFisk,Johnson & Johnson,2021-02-21
+79,IrmaMontoya,Moderna,2021-01-09
+80,GaryHoffman,Pfizer,2020-05-16
+81,GaryHoffman,Pfizer,2020-06-06
+82,JeffCamargo,Johnson & Johnson,2020-12-23
+83,YvonneThomason,Pfizer,2020-12-03
+84,YvonneThomason,Pfizer,2020-12-24
+85,DarlaSilbaugh,Johnson & Johnson,2020-06-13
+86,DarlaSilbaugh,Johnson & Johnson,2020-07-04
+87,EddieAngulo,Moderna,2020-11-24
+88,MargaretHarrison,Johnson & Johnson,2020-12-13
+89,MargaretHarrison,Johnson & Johnson,2021-01-03
+90,EarlBoyle,Johnson & Johnson,2020-06-24
+91,GinaMccoy,Moderna,2020-10-20
+92,GinaMccoy,Moderna,2020-11-10
+93,WilliamMarcus,Pfizer,2020-09-30
+94,WilliamMarcus,Pfizer,2020-10-21
+95,EstherVecker,Pfizer,2020-08-06
+96,BarbaraJordon,Johnson & Johnson,2020-05-07
+97,ZacharyCraycraft,Johnson & Johnson,2021-02-04
+98,StefanieBalcom,Johnson & Johnson,2020-05-28
+99,RoseAdkins,Moderna,2020-12-08
+100,RoseAdkins,Moderna,2020-12-29
+101,GaryVanblaricum,Moderna,2020-08-21
+102,EileenOlsen,Pfizer,2020-10-29
+103,EileenOlsen,Pfizer,2020-11-19
+104,DebraBabcock,Moderna,2020-09-11
+105,DebraBabcock,Moderna,2020-10-02
+106,BeverlyTutas,Pfizer,2020-06-30
+107,JosephHernandez,Moderna,2020-11-25
+108,PaulinePatterson,Pfizer,2020-05-06
+109,PaulinePatterson,Pfizer,2020-05-27
+110,RuthBussell,Moderna,2020-11-02
+111,RuthBussell,Moderna,2020-11-23
+112,JeannetteCameron,Johnson & Johnson,2020-06-20
+113,JeannetteCameron,Johnson & Johnson,2020-07-11
+114,MichaelHayes,Johnson & Johnson,2020-11-13
+115,DavidGreer,Moderna,2020-09-04
+116,DavidGreer,Moderna,2020-09-25
+117,StevenBell,Johnson & Johnson,2020-10-28
+118,NickCole,Moderna,2020-09-11
+119,NickCole,Moderna,2020-10-02
+120,HildaLuebke,Johnson & Johnson,2021-01-06
+121,MarieLozano,Pfizer,2021-02-20
+122,DanielBaker,Johnson & Johnson,2020-03-29
+123,MargaretWarner,Johnson & Johnson,2020-03-05
+124,MargaretWarner,Johnson & Johnson,2020-03-26
+125,BrendaLawson,Johnson & Johnson,2021-01-12
+126,BrendaLawson,Johnson & Johnson,2021-02-02
+127,PearlAndrade,Moderna,2020-08-11
+128,PearlAndrade,Moderna,2020-09-01
+129,RonDominquez,Johnson & Johnson,2020-05-22
+130,SanfordJohnson,Johnson & Johnson,2020-08-14
+131,SanfordJohnson,Johnson & Johnson,2020-09-04
+132,ConnieHunter,Pfizer,2020-06-08
+133,ConnieHunter,Pfizer,2020-06-29
+134,KerryFinley,Johnson & Johnson,2020-11-03
+135,KerryFinley,Johnson & Johnson,2020-11-24
+136,BrendaGriffin,Pfizer,2020-12-17
+137,FayWilliams,Johnson & Johnson,2020-12-13
+138,FayWilliams,Johnson & Johnson,2021-01-03
+139,DickHurst,Pfizer,2020-08-25
+140,AnnHiggins,Moderna,2020-06-14
+141,CameronBrooks,Moderna,2020-08-18
+142,ManuelLedon,Moderna,2021-03-08
+143,ChanelHornyak,Moderna,2020-07-21
+144,ChanelHornyak,Moderna,2020-08-11
+145,HowardCopland,Johnson & Johnson,2020-08-18
+146,JamiArmstrong,Moderna,2020-11-30
+147,JamiArmstrong,Moderna,2020-12-21
+148,BrianRice,Pfizer,2020-07-24
+149,VeraPearson,Moderna,2020-03-22
+150,VeraPearson,Moderna,2020-04-12
+151,GildaHastings,Pfizer,2020-11-11
+152,IrmaChu,Moderna,2020-08-19
+153,CarlosHamilton,Johnson & Johnson,2020-07-14
+154,ElizaKyung,Moderna,2020-06-30
+155,ElizaKyung,Moderna,2020-07-21
+156,AlejandraHobbs,Johnson & Johnson,2020-04-20
+157,AlejandraHobbs,Johnson & Johnson,2020-05-11
+158,MoiraCoke,Johnson & Johnson,2020-10-31
+159,MoiraCoke,Johnson & Johnson,2020-11-21
+160,SusanCambareri,Pfizer,2020-11-01
+161,NancyBinford,Moderna,2020-08-15
+162,NancyBinford,Moderna,2020-09-05
+163,PaulJudkins,Pfizer,2021-02-18
+164,CharlesWelch,Pfizer,2021-02-12
+165,CharlesWelch,Pfizer,2021-03-05
+166,WillieCarpenter,Moderna,2020-05-19
+167,WillieCarpenter,Moderna,2020-06-09
+168,EthelWilke,Pfizer,2020-11-02
+169,RonaldGassoway,Johnson & Johnson,2020-03-14
+170,RaymondGodfrey,Moderna,2020-07-21
+171,RaymondGodfrey,Moderna,2020-08-11
+172,TonyClark,Johnson & Johnson,2021-01-07
+173,TonyClark,Johnson & Johnson,2021-01-28
+174,HienDolan,Moderna,2020-11-14
+175,IonaVerkamp,Pfizer,2020-12-23
+176,IonaVerkamp,Pfizer,2021-01-13
+177,JohnClaytor,Pfizer,2020-10-31
+178,JohnClaytor,Pfizer,2020-11-21
+179,WandaPearson,Johnson & Johnson,2020-10-29
+180,WandaPearson,Johnson & Johnson,2020-11-19
+181,FranciscoTerry,Johnson & Johnson,2020-12-09
+182,SantanaBingler,Johnson & Johnson,2020-11-04
+183,TeresitaBroughton,Johnson & Johnson,2020-03-21
+184,CarlosAnderson,Johnson & Johnson,2020-09-12
+185,CarlosAnderson,Johnson & Johnson,2020-10-03
+186,DanaTaylor,Moderna,2020-12-17
+187,JuliaWallace,Pfizer,2020-07-14
+188,JuliaWallace,Pfizer,2020-08-04
+189,MarieHenderson,Pfizer,2021-02-17
+190,SarahHaight,Johnson & Johnson,2020-05-19
+191,SharonLofaro,Moderna,2020-05-07
+192,JanetHutton,Moderna,2020-10-18
+193,RaymondSomerville,Moderna,2020-11-15
+194,RaymondSomerville,Moderna,2020-12-06
+195,BetsyRoberts,Moderna,2020-10-14
+196,FrankieSharp,Moderna,2020-08-17
+197,FrankieSharp,Moderna,2020-09-07
+198,RandyRoot,Moderna,2021-01-06
+199,NancyLehman,Pfizer,2020-11-21
+200,NancyLehman,Pfizer,2020-12-12
+201,LarryJohnson,Pfizer,2020-09-24
+202,CharlesKang,Pfizer,2020-11-22
+203,CharlesKang,Pfizer,2020-12-13
+204,RichardHoekstra,Johnson & Johnson,2020-10-06
+205,GloriaArevalo,Pfizer,2021-01-25
+206,NataliaSchlagel,Johnson & Johnson,2020-08-19
+207,DavidChesson,Moderna,2020-09-05
+208,RonaldCondon,Pfizer,2020-12-21
+209,JamesFreedman,Johnson & Johnson,2020-06-13
+210,JamesFreedman,Johnson & Johnson,2020-07-04
+211,RichardWilson,Pfizer,2020-04-17
+212,RichardWilson,Pfizer,2020-05-08
+213,SusanEngelhardt,Johnson & Johnson,2020-03-18
+214,SheriTacadina,Pfizer,2020-07-06
+215,ChristopherGiunta,Moderna,2020-03-30
+216,ChristopherGiunta,Moderna,2020-04-20
+217,AuroraPedley,Pfizer,2020-08-30
+218,EarlThompson,Johnson & Johnson,2020-11-21
+219,CharlesHartsock,Pfizer,2021-01-31
+220,CharlesHartsock,Pfizer,2021-02-21
+221,DavidKing,Pfizer,2020-06-08
+222,DavidKing,Pfizer,2020-06-29
+223,NelsonRobinson,Johnson & Johnson,2020-06-20
+224,LuzSchulz,Johnson & Johnson,2020-08-04
+225,MarcusHarrington,Moderna,2020-10-28
+226,CharlesVogus,Pfizer,2020-04-25
+227,MarthaPeoples,Moderna,2020-12-10
+228,LenaRitter,Moderna,2021-01-29
+229,StanleyTeets,Moderna,2020-04-02
+230,StanleyTeets,Moderna,2020-04-23
+231,JuanSimila,Johnson & Johnson,2020-07-03
+232,JuanSimila,Johnson & Johnson,2020-07-24
+233,SamanthaGoulette,Moderna,2021-02-13
+234,SamanthaGoulette,Moderna,2021-03-06
+235,GladysBellendir,Moderna,2020-03-02
+236,JamesBarber,Pfizer,2020-03-24
+237,CarlosJohns,Pfizer,2021-03-07
+238,AngelaWatkins,Pfizer,2020-04-03
+239,AngelaWatkins,Pfizer,2020-04-24
+240,LuanneAnderson,Pfizer,2020-08-30
+241,JoeJorgensen,Pfizer,2020-06-27
+242,JoeJorgensen,Pfizer,2020-07-18
+243,ArmandWinchell,Moderna,2020-12-08
+244,ArmandWinchell,Moderna,2020-12-29
+245,MarkWhalen,Pfizer,2021-02-05
+246,MarkWhalen,Pfizer,2021-02-26
+247,RuthHansen,Moderna,2020-03-30
+248,RuthHansen,Moderna,2020-04-20
+249,JulioMartel,Moderna,2020-11-05
+250,JulioMartel,Moderna,2020-11-26
+251,LaurieCaldwell,Moderna,2020-03-07
+252,LaurieCaldwell,Moderna,2020-03-28
+253,PearlFredericks,Pfizer,2020-07-27
+254,PearlFredericks,Pfizer,2020-08-17
+255,MarkBumgarner,Johnson & Johnson,2020-11-25
+256,MarkBumgarner,Johnson & Johnson,2020-12-16
+257,SocorroBaker,Pfizer,2020-08-04
+258,SocorroBaker,Pfizer,2020-08-25
+259,JessicaOwens,Johnson & Johnson,2021-02-04
+260,JessicaOwens,Johnson & Johnson,2021-02-25
+261,MargieAlvarado,Johnson & Johnson,2020-08-25
+262,MargieAlvarado,Johnson & Johnson,2020-09-15
+263,AnthonyCox,Johnson & Johnson,2021-01-30
+264,AnthonyCox,Johnson & Johnson,2021-02-20
+265,MaryannWerner,Pfizer,2020-07-30
+266,VernaJones,Johnson & Johnson,2020-10-18
+267,VernaJones,Johnson & Johnson,2020-11-08
+268,RandyStembridge,Moderna,2020-04-04
+269,RandyStembridge,Moderna,2020-04-25
+270,DennisSpalding,Pfizer,2020-12-17
+271,DennisSpalding,Pfizer,2021-01-07
+272,JosephSims,Johnson & Johnson,2020-05-01
+273,JosephSims,Johnson & Johnson,2020-05-22
+274,KennethTarango,Pfizer,2020-10-06
+275,KennethTarango,Pfizer,2020-10-27
+276,DarleneJeske,Pfizer,2020-05-05
+277,CaseyHalford,Pfizer,2021-01-31
+278,CaseyHalford,Pfizer,2021-02-21
+279,AnthonyPetry,Moderna,2020-12-20
+280,AnthonyPetry,Moderna,2021-01-10
+281,CatherineGailes,Johnson & Johnson,2020-05-24
+282,CatherineGailes,Johnson & Johnson,2020-06-14
+283,TerryMaus,Moderna,2020-06-05
+284,TerryMaus,Moderna,2020-06-26
+285,JessicaAlvarado,Moderna,2020-05-02
+286,GregoryNewton,Pfizer,2020-03-24
+287,CourtneyWelch,Pfizer,2020-08-18
+288,MaryBelton,Moderna,2020-11-09
+289,MatthewDoggett,Johnson & Johnson,2020-04-06
+290,MatthewDoggett,Johnson & Johnson,2020-04-27
+291,HildaRichardson,Pfizer,2020-08-04
+292,HildaRichardson,Pfizer,2020-08-25
+293,CharlieStiltner,Moderna,2020-07-27
+294,CharlieStiltner,Moderna,2020-08-17
+295,InaSamuels,Johnson & Johnson,2020-12-31
+296,InaSamuels,Johnson & Johnson,2021-01-21
+297,LoydWright,Johnson & Johnson,2020-12-25
+298,WardFischer,Johnson & Johnson,2020-05-21
+299,WardFischer,Johnson & Johnson,2020-06-11
+300,JettieBuck,Pfizer,2020-08-29
+301,JettieBuck,Pfizer,2020-09-19
+302,JohnSuggs,Pfizer,2020-06-21
+303,DavidMelendez,Johnson & Johnson,2020-04-21
+304,CoyHatton,Moderna,2020-09-01
+305,CoyHatton,Moderna,2020-09-22
+306,JoanJohnson,Moderna,2020-09-11
+307,ViolaBlack,Pfizer,2020-06-13
+308,MichaelHang,Pfizer,2021-02-05
+309,MarleneGutierrez,Moderna,2020-05-20
+310,SuzanneAnderson,Moderna,2020-03-19
+311,SuzanneAnderson,Moderna,2020-04-09
+312,GeraldChin,Moderna,2021-01-09
+313,GeraldChin,Moderna,2021-01-30
+314,AnnWilson,Pfizer,2020-11-06
+315,JohnStatler,Johnson & Johnson,2020-07-23
+316,JohnStatler,Johnson & Johnson,2020-08-13
+317,SusanMiga,Moderna,2020-08-25
+318,SusanMiga,Moderna,2020-09-15
+319,MaryVillalva,Moderna,2020-09-15
+320,KelliLasater,Moderna,2020-03-11
+321,PamelaBradley,Moderna,2020-06-22
+322,PamelaBradley,Moderna,2020-07-13
+323,BruceMansour,Pfizer,2020-12-23
+324,EricSinstack,Moderna,2020-04-02
+325,SheilaGaston,Johnson & Johnson,2020-06-23
+326,SheilaGaston,Johnson & Johnson,2020-07-14
+327,AlisaBusbee,Pfizer,2020-07-25
+328,AlisaBusbee,Pfizer,2020-08-15
+329,VirginiaTruong,Moderna,2020-06-03
+330,VirginiaTruong,Moderna,2020-06-24
+331,EmiliePatrick,Johnson & Johnson,2021-01-29
+332,EmiliePatrick,Johnson & Johnson,2021-02-19
+333,EugeneHoneycutt,Moderna,2020-04-07
+334,EugeneHoneycutt,Moderna,2020-04-28
+335,SusanneCovington,Johnson & Johnson,2020-03-08
+336,SusanneCovington,Johnson & Johnson,2020-03-29
+337,AngelMoroney,Johnson & Johnson,2020-05-29
+338,AngelMoroney,Johnson & Johnson,2020-06-19
+339,StephanieHuber,Moderna,2020-11-01
+340,DeborahPecoraro,Moderna,2020-09-26
+341,DeborahPecoraro,Moderna,2020-10-17
+342,BenCunningham,Johnson & Johnson,2021-03-06
+343,DonaldAbell,Moderna,2020-03-09
+344,KevinDejong,Johnson & Johnson,2020-07-11
+345,KevinDejong,Johnson & Johnson,2020-08-01
+346,DarylSmith,Moderna,2020-03-24
+347,LindaMarsh,Pfizer,2020-05-16
+348,LindaMarsh,Pfizer,2020-06-06
+349,RosieMathey,Johnson & Johnson,2020-12-10
+350,DonaldSmith,Johnson & Johnson,2020-08-04
+351,DonaldSmith,Johnson & Johnson,2020-08-25
+352,KentFowler,Moderna,2020-12-08
+353,KentFowler,Moderna,2020-12-29
+354,TiffanyNorthrop,Moderna,2020-11-03
+355,TiffanyNorthrop,Moderna,2020-11-24
+356,JamesHoneycutt,Pfizer,2020-10-13
+357,BrandonMaher,Johnson & Johnson,2020-12-11
+358,BrandonMaher,Johnson & Johnson,2021-01-01
+359,PearlWatson,Moderna,2020-04-24
+360,MarilynSmith,Johnson & Johnson,2020-08-18
+361,BrianGizzi,Johnson & Johnson,2021-02-02
+362,DanielleBrobst,Pfizer,2020-06-13
+363,GeraldineSchultz,Johnson & Johnson,2020-12-26
+364,GeraldineSchultz,Johnson & Johnson,2021-01-16
+365,DonaldBoone,Johnson & Johnson,2020-12-04
+366,DonaldBoone,Johnson & Johnson,2020-12-25
+367,NoahMorris,Johnson & Johnson,2020-09-28
+368,JulioSykes,Pfizer,2020-12-10
+369,JulioSykes,Pfizer,2020-12-31
+370,ThomasDillard,Johnson & Johnson,2020-08-16
+371,ThomasDillard,Johnson & Johnson,2020-09-06
+372,CarmeloVandemark,Pfizer,2020-06-04
+373,CarrollChung,Johnson & Johnson,2020-12-14
+374,GaryServais,Johnson & Johnson,2020-10-08
+375,GaryServais,Johnson & Johnson,2020-10-29
+376,FlorenceBagnoli,Johnson & Johnson,2020-03-09
+377,FlorenceBagnoli,Johnson & Johnson,2020-03-30
+378,RogerJenkins,Pfizer,2021-02-21
+379,DianaFields,Pfizer,2020-10-31
+380,MatthewAshbaugh,Pfizer,2020-05-04
+381,LaurelChristensen,Pfizer,2020-12-21
+382,MarioBirmingham,Moderna,2020-05-10
+383,MarioBirmingham,Moderna,2020-05-31
+384,AnnieGeorge,Moderna,2020-07-28
+385,ShirleneDowns,Moderna,2021-02-28
+386,RandyLove,Johnson & Johnson,2020-09-30
+387,RandyLove,Johnson & Johnson,2020-10-21
+388,SusanDiffey,Johnson & Johnson,2020-03-11
+389,SusanDiffey,Johnson & Johnson,2020-04-01
+390,HarrietWhite,Johnson & Johnson,2021-01-22
+391,MargMoreno,Johnson & Johnson,2020-03-24
+392,ThomasLove,Pfizer,2020-06-10
+393,LarryMarshall,Johnson & Johnson,2020-08-01
+394,LarryMarshall,Johnson & Johnson,2020-08-22
+395,DeborahCarpenter,Johnson & Johnson,2020-05-07
+396,DeborahCarpenter,Johnson & Johnson,2020-05-28
+397,EvelynCumming,Moderna,2020-11-29
+398,EvelynCumming,Moderna,2020-12-20
+399,DennisNowak,Pfizer,2020-09-16
+400,DennisNowak,Pfizer,2020-10-07
+401,VirginiaShield,Pfizer,2020-03-28
+402,VirginiaShield,Pfizer,2020-04-18
+403,GloriaHeinzen,Pfizer,2020-11-01
+404,RosaBuchmeier,Moderna,2020-09-12
+405,RosaBuchmeier,Moderna,2020-10-03
+406,EddieWertheim,Pfizer,2020-04-17
+407,EddieWertheim,Pfizer,2020-05-08
+408,TeresaHansford,Pfizer,2020-03-03
+409,RicardoGarrison,Moderna,2020-11-30
+410,GloriaPhillips,Johnson & Johnson,2020-07-22
+411,GloriaPhillips,Johnson & Johnson,2020-08-12
+412,RachelArcher,Johnson & Johnson,2020-06-30
+413,JeanGrogan,Johnson & Johnson,2020-07-18
+414,JeanGrogan,Johnson & Johnson,2020-08-08
+415,WilliamBrown,Johnson & Johnson,2020-09-08
+416,WilliamBrown,Johnson & Johnson,2020-09-29
+417,WinfordTucker,Moderna,2020-08-15
+418,WinfordTucker,Moderna,2020-09-05
+419,TerrenceHarris,Pfizer,2020-09-20
+420,LauraLynch,Pfizer,2020-08-11
+421,ScottyPhillips,Moderna,2021-03-07
+422,ThomasPatel,Pfizer,2020-06-14
+423,RonaldReed,Pfizer,2020-05-14
+424,RonaldReed,Pfizer,2020-06-04
+425,TaylorChadwell,Johnson & Johnson,2020-09-26
+426,TaylorChadwell,Johnson & Johnson,2020-10-17
+427,ElissaCollier,Moderna,2020-07-13
+428,ChasityDavis,Pfizer,2020-12-19
+429,TeresaNelson,Pfizer,2020-09-01
+430,TommyPruitt,Johnson & Johnson,2021-02-17
+431,BradfordWagner,Pfizer,2020-07-20
+432,BradfordWagner,Pfizer,2020-08-10
+433,TerrenceWilliams,Pfizer,2021-03-05
+434,MargaretSchultz,Moderna,2020-09-25
+435,MargaretSchultz,Moderna,2020-10-16
+436,SandraWebb,Johnson & Johnson,2020-05-01
+437,WandaCaneva,Pfizer,2020-10-18
+438,LindaKeogh,Moderna,2021-03-02
+439,MarleneFlorentino,Moderna,2021-01-08
+440,JenniferGoldsmith,Johnson & Johnson,2020-05-18
+441,RogerBrown,Johnson & Johnson,2020-09-28
+442,TerryWooley,Johnson & Johnson,2020-08-21
+443,TerryWooley,Johnson & Johnson,2020-09-11
+444,MichaelEvans,Moderna,2020-05-30
+445,AndreaRutledge,Moderna,2020-11-12
+446,AndreaRutledge,Moderna,2020-12-03
+447,ArnoldRamos,Johnson & Johnson,2020-04-26
+448,EricJackson,Pfizer,2020-06-16
+449,CharlesGratton,Pfizer,2021-02-21
+450,JonathanFee,Johnson & Johnson,2020-04-10
+451,JustinAusmus,Moderna,2020-12-19
+452,JustinAusmus,Moderna,2021-01-09
+453,MariaTassone,Pfizer,2020-12-08
+454,MariaTassone,Pfizer,2020-12-29
+455,HenriettaGaroutte,Moderna,2021-01-26
+456,RichieWoodall,Moderna,2020-05-10
+457,RichieWoodall,Moderna,2020-05-31
+458,EllenJones,Pfizer,2020-05-27
+459,WilliamHuntley,Moderna,2020-07-25
+460,StephenLee,Johnson & Johnson,2020-05-27
+461,StephenLee,Johnson & Johnson,2020-06-17
+462,BettyeBaker,Johnson & Johnson,2020-03-18
+463,FrancesBuzis,Pfizer,2020-10-11
+464,FrancesBuzis,Pfizer,2020-11-01
+465,FrankMeredith,Pfizer,2020-08-17
+466,FrankMeredith,Pfizer,2020-09-07
+467,KennethRizzo,Moderna,2020-10-09
+468,JustinRyan,Pfizer,2020-12-02
+469,JeremyOdermott,Johnson & Johnson,2020-04-23
+470,JeromeSandoval,Johnson & Johnson,2020-08-09
+471,LarryGilman,Pfizer,2020-05-21
+472,AnnaPerry,Moderna,2020-05-23
+473,GloriaTaylor,Pfizer,2020-08-11
+474,GloriaTaylor,Pfizer,2020-09-01
+475,DavidVacheresse,Johnson & Johnson,2020-05-02
+476,DavidVacheresse,Johnson & Johnson,2020-05-23
+477,RobertBerumen,Johnson & Johnson,2020-07-10
+478,KimBauman,Johnson & Johnson,2021-01-20
+479,JacobBurns,Moderna,2020-06-20
+480,JeromyKrantz,Johnson & Johnson,2020-05-01
+481,JeromyKrantz,Johnson & Johnson,2020-05-22
+482,CharlotteMccroy,Pfizer,2021-03-04
+483,CindyMcminn,Moderna,2020-04-29
+484,CindyMcminn,Moderna,2020-05-20
+485,HarryInman,Johnson & Johnson,2020-07-29
+486,HarryInman,Johnson & Johnson,2020-08-19
+487,VivianGuel,Moderna,2020-03-28
+488,VivianGuel,Moderna,2020-04-18
+489,ElizabethCoutee,Johnson & Johnson,2020-05-22
+490,JackBrown,Pfizer,2020-08-19
+491,SamuelRamsey,Johnson & Johnson,2020-05-02
+492,KathyPerez,Pfizer,2020-09-30
+493,TuanFrench,Moderna,2020-10-29
+494,TuanFrench,Moderna,2020-11-19
+495,LuisKing,Johnson & Johnson,2020-10-21
+496,LuisKing,Johnson & Johnson,2020-11-11
+497,ChristinaBlake,Moderna,2020-11-10
+498,KathrynRodriguez,Moderna,2020-03-19
+499,KathrynRodriguez,Moderna,2020-04-09
+500,RaymondFarris,Pfizer,2020-10-07
+501,ChristopherMoilanen,Johnson & Johnson,2020-07-09
+502,ErikaBrezenski,Pfizer,2020-04-26
+503,ShirleyFrisbie,Johnson & Johnson,2020-10-11
+504,ShirleyFrisbie,Johnson & Johnson,2020-11-01
+505,TravisWilloughby,Moderna,2021-01-19
+506,GeraldineBaxley,Pfizer,2021-01-30
+507,SamanthaVowell,Johnson & Johnson,2021-02-02
+508,SamanthaVowell,Johnson & Johnson,2021-02-23
+509,PennyBremer,Johnson & Johnson,2021-02-11
+510,JuanWykes,Johnson & Johnson,2021-01-25
+511,JohnMaobi,Pfizer,2020-03-11
+512,RuthGlesener,Pfizer,2020-11-13
+513,LoriPringle,Pfizer,2020-12-28
+514,LoriPringle,Pfizer,2021-01-18
+515,ZacharySchuster,Johnson & Johnson,2021-03-04
+516,FlorenceBall,Moderna,2020-10-21
+517,FlorenceBall,Moderna,2020-11-11
+518,MauriceRickert,Moderna,2021-01-04
+519,JeanetteMathew,Pfizer,2020-10-18
+520,JeanetteMathew,Pfizer,2020-11-08
+521,JeffreyGatewood,Johnson & Johnson,2020-03-27
+522,YenFrye,Moderna,2020-07-30
+523,YenFrye,Moderna,2020-08-20
+524,NathanJones,Pfizer,2020-09-01
+525,MichaelWashington,Moderna,2020-12-04
+526,JudithBragg,Pfizer,2020-08-07
+527,ElizabethLopez,Moderna,2020-10-13
+528,ElizabethLopez,Moderna,2020-11-03
+529,ChristopherNewsom,Pfizer,2020-07-20
+530,JasonHarbin,Johnson & Johnson,2020-03-02
+531,FernHauser,Pfizer,2020-04-04
+532,HollyGonzalez,Johnson & Johnson,2020-05-05
+533,TaraKenan,Pfizer,2020-06-06
+534,TaraKenan,Pfizer,2020-06-27
+535,EricRuder,Moderna,2020-08-13
+536,ScottyLarson,Johnson & Johnson,2020-09-16
+537,JohnnyAndrews,Johnson & Johnson,2020-09-14
+538,JohnnyAndrews,Johnson & Johnson,2020-10-05
+539,RobertJefferies,Johnson & Johnson,2020-06-27
+540,MarleneClark,Johnson & Johnson,2020-10-25
+541,MarleneClark,Johnson & Johnson,2020-11-15
+542,VernonLiotta,Johnson & Johnson,2020-12-08
+543,JenniferSeide,Johnson & Johnson,2020-07-02
+544,DarlenePurcell,Pfizer,2021-02-14
+545,DarlenePurcell,Pfizer,2021-03-07
+546,HenryCamp,Pfizer,2020-08-21
+547,GloriaBarnett,Pfizer,2020-05-22
+548,GloriaBarnett,Pfizer,2020-06-12
+549,CarlBlack,Johnson & Johnson,2020-03-21
+550,CarlBlack,Johnson & Johnson,2020-04-11
+551,MargeryJohnson,Pfizer,2021-01-06
+552,MargeryJohnson,Pfizer,2021-01-27
+553,BrianStevens,Pfizer,2020-08-14
+554,BrianStevens,Pfizer,2020-09-04
+555,JamesHall,Pfizer,2021-02-14
+556,JamesHall,Pfizer,2021-03-07
+557,ArdellSimpson,Moderna,2020-07-09
+558,CarolSanchez,Pfizer,2020-05-20
+559,CarolSanchez,Pfizer,2020-06-10
+560,JamesMartinez,Pfizer,2021-03-02
+561,ChristopherDiaz,Johnson & Johnson,2020-07-06
+562,ChristopherDiaz,Johnson & Johnson,2020-07-27
+563,JoyceSenethavilouk,Pfizer,2020-11-22
+564,JoyceSenethavilouk,Pfizer,2020-12-13
+565,MargaretSkinner,Moderna,2020-11-30
+566,MargaretSkinner,Moderna,2020-12-21
+567,MaryHorst,Johnson & Johnson,2020-08-24
+568,MaryHorst,Johnson & Johnson,2020-09-14
+569,DavidFeenstra,Pfizer,2021-01-08
+570,AnnabelleWalton,Moderna,2020-03-28
+571,AnnabelleWalton,Moderna,2020-04-18
+572,MatthewPitts,Johnson & Johnson,2020-04-23
+573,MatthewPitts,Johnson & Johnson,2020-05-14
+574,DianaGess,Pfizer,2021-02-18
+575,WilmaRichardson,Pfizer,2020-05-25
+576,GeorginaBarwick,Moderna,2021-01-09
+577,GeorginaBarwick,Moderna,2021-01-30
+578,EdwardRuiz,Moderna,2021-02-06
+579,RobertSchwerdtfeger,Moderna,2020-08-13
+580,MelvinHarper,Pfizer,2021-01-10
+581,AnnaPayne,Johnson & Johnson,2020-09-04
+582,AnnaPayne,Johnson & Johnson,2020-09-25
+583,RobertHaag,Moderna,2020-12-30
+584,RobertHaag,Moderna,2021-01-20
+585,EllenBradley,Pfizer,2020-10-22
+586,EllenBradley,Pfizer,2020-11-12
+587,RalphWild,Johnson & Johnson,2021-01-23
+588,CarlValdez,Pfizer,2021-01-16
+589,CarlValdez,Pfizer,2021-02-06
+590,RalphMedrano,Pfizer,2020-06-08
+591,SunnyRodriguez,Moderna,2020-03-22
+592,SunnyRodriguez,Moderna,2020-04-12
+593,TinaLinnane,Pfizer,2021-02-11
+594,TinaLinnane,Pfizer,2021-03-04
+595,MabelMakowski,Moderna,2020-09-23
+596,AshleeBrown,Pfizer,2020-09-28
+597,RobertLobue,Johnson & Johnson,2020-05-19
+598,RobertLobue,Johnson & Johnson,2020-06-09
+599,JacksonEdwards,Pfizer,2020-09-03
+600,CarlaDiaz,Pfizer,2020-05-09
+601,CarlaDiaz,Pfizer,2020-05-30
+602,CharlieCarter,Moderna,2020-10-08
+603,CharlieCarter,Moderna,2020-10-29
+604,DavidHarris,Johnson & Johnson,2020-04-14
+605,DavidHarris,Johnson & Johnson,2020-05-05
+606,EugeneOrozco,Pfizer,2020-06-01
+607,EugeneOrozco,Pfizer,2020-06-22
+608,ElaineSosa,Moderna,2021-01-06
+609,ElaineSosa,Moderna,2021-01-27
+610,ThomasGillilan,Johnson & Johnson,2021-01-13
+611,ThomasGillilan,Johnson & Johnson,2021-02-03
+612,ElizabethBrown,Johnson & Johnson,2020-03-25
+613,PatrickVictor,Pfizer,2020-09-13
+614,PatrickVictor,Pfizer,2020-10-04
+615,LindaYandell,Moderna,2020-12-14
+616,LynnPrice,Pfizer,2020-05-08
+617,JohnArnold,Moderna,2020-08-02
+618,PattyDrake,Moderna,2021-02-18
+619,VellaScovil,Moderna,2020-03-15
+620,GracielaHope,Johnson & Johnson,2020-04-11
+621,GloriaYeatts,Pfizer,2020-11-05
+622,GloriaYeatts,Pfizer,2020-11-26
+623,TommyTaylor,Johnson & Johnson,2020-07-20
+624,TrishaWagner,Johnson & Johnson,2020-12-24
+625,TrishaWagner,Johnson & Johnson,2021-01-14
+626,RolandArnold,Moderna,2020-12-17
+627,RolandArnold,Moderna,2021-01-07
+628,JerryStewart,Johnson & Johnson,2020-11-22
+629,WayneGarnett,Johnson & Johnson,2020-04-12
+630,LewisBenscoter,Johnson & Johnson,2020-04-10
+631,LewisBenscoter,Johnson & Johnson,2020-05-01
+632,WilliamNicholson,Johnson & Johnson,2020-09-26
+633,RicardoBryant,Johnson & Johnson,2021-01-14
+634,RicardoBryant,Johnson & Johnson,2021-02-04
+635,PatricaAwalt,Moderna,2020-04-13
+636,PatricaAwalt,Moderna,2020-05-04
+637,JustinJones,Johnson & Johnson,2020-09-21
+638,JustinJones,Johnson & Johnson,2020-10-12
+639,EddieRichardson,Moderna,2020-12-26
+640,JasonBrown,Johnson & Johnson,2020-06-25
+641,JasonBrown,Johnson & Johnson,2020-07-16
+642,AngelLabo,Moderna,2020-03-17
+643,AngelToone,Moderna,2020-07-14
+644,LoniBarretto,Pfizer,2020-05-18
+645,LoniBarretto,Pfizer,2020-06-08
+646,AshleyAbbott,Johnson & Johnson,2020-07-27
+647,AshleyAbbott,Johnson & Johnson,2020-08-17
+648,StevenBasquez,Moderna,2020-07-31
+649,StevenBasquez,Moderna,2020-08-21
+650,MargaretGloor,Moderna,2020-07-22
+651,JamieTooley,Moderna,2020-11-28
+652,JamieTooley,Moderna,2020-12-19
+653,GarnetNockels,Pfizer,2020-08-03
+654,GarnetNockels,Pfizer,2020-08-24
+655,ArleneGill,Johnson & Johnson,2020-04-12
+656,ArleneGill,Johnson & Johnson,2020-05-03
+657,RobertCulver,Pfizer,2020-05-18
+658,RobertCulver,Pfizer,2020-06-08
+659,CherylSonoda,Pfizer,2020-04-30
+660,TimothyVadnais,Moderna,2020-08-07
+661,TimothyVadnais,Moderna,2020-08-28
+662,DarrinChampagne,Moderna,2020-06-27
+663,PamelaMarks,Pfizer,2020-08-25
+664,JohnNowak,Pfizer,2020-04-25
+665,JohnNowak,Pfizer,2020-05-16
+666,DonaldDewing,Pfizer,2020-08-31
+667,DonaldDewing,Pfizer,2020-09-21
+668,KeithGunn,Johnson & Johnson,2020-11-28
+669,KeithGunn,Johnson & Johnson,2020-12-19
+670,CarmenFranklin,Moderna,2020-03-10
+671,DavidArdis,Pfizer,2020-03-09
+672,MiguelMick,Moderna,2020-06-25
+673,PamelaDaniels,Moderna,2020-03-07
+674,KathleenIce,Johnson & Johnson,2020-11-06
+675,RandySmith,Pfizer,2020-05-25
+676,DoloresWilliams,Johnson & Johnson,2020-10-11
+677,KarenSkaggs,Johnson & Johnson,2020-09-05
+678,KarenSkaggs,Johnson & Johnson,2020-09-26
+679,DoraSalvemini,Johnson & Johnson,2020-09-13
+680,AnnDuncan,Pfizer,2020-08-02
+681,AnnDuncan,Pfizer,2020-08-23
+682,KathleenBessel,Johnson & Johnson,2020-05-02
+683,KathleenBessel,Johnson & Johnson,2020-05-23
+684,DanielWeston,Moderna,2020-11-03
+685,DanielWeston,Moderna,2020-11-24
+686,KristinDavis,Pfizer,2020-03-18
+687,LawrenceBryant,Johnson & Johnson,2020-08-20
+688,LawrenceBryant,Johnson & Johnson,2020-09-10
+689,OliveCromwell,Moderna,2020-04-08
+690,AnnMarch,Pfizer,2020-12-19
+691,NancyHazley,Pfizer,2021-02-08
+692,NancyHazley,Pfizer,2021-03-01
+693,ThelmaBlack,Moderna,2020-05-10
+694,MarionAllendorf,Johnson & Johnson,2020-07-24
+695,JohnathanShearer,Pfizer,2020-12-29
+696,AlisonNunley,Moderna,2020-11-29
+697,AlisonNunley,Moderna,2020-12-20
+698,DawnPreston,Pfizer,2020-11-18
+699,KirkCangelosi,Moderna,2020-10-05
+700,CiaraHenson,Pfizer,2020-06-11
+701,ArmandoElder,Moderna,2020-10-22
+702,GuyBohland,Pfizer,2021-01-12
+703,GuyBohland,Pfizer,2021-02-02
+704,JoyceBrantley,Pfizer,2020-06-22
+705,JoyceBrantley,Pfizer,2020-07-13
+706,AhmadPruitt,Johnson & Johnson,2020-04-12
+707,CarolinaEdwards,Moderna,2021-01-28
+708,LisaFlores,Moderna,2020-12-08
+709,LisaFlores,Moderna,2020-12-29
+710,AnnWilliams,Pfizer,2021-01-31
+711,AnnWilliams,Pfizer,2021-02-21
+712,ElbaGrubb,Pfizer,2020-12-17
+713,ElbaGrubb,Pfizer,2021-01-07
+714,KennethCrumley,Pfizer,2020-08-08
+715,DavidFlores,Moderna,2020-10-30
+716,DavidFlores,Moderna,2020-11-20
+717,JamesHoneycutt1,Pfizer,2020-12-23
+718,JamesHoneycutt1,Pfizer,2021-01-13
+719,KathleenKalberer,Johnson & Johnson,2020-12-27
+720,KathleenKalberer,Johnson & Johnson,2021-01-17
+721,MarianMeissner,Moderna,2021-01-20
+722,MarianMeissner,Moderna,2021-02-10
+723,JerryDiamond,Moderna,2020-06-06
+724,JerryDiamond,Moderna,2020-06-27
+725,HollyHazelhurst,Moderna,2020-04-26
+726,HollyHazelhurst,Moderna,2020-05-17
+727,RenaLinton,Pfizer,2020-11-02
+728,RenaLinton,Pfizer,2020-11-23
+729,HenryOlmstead,Johnson & Johnson,2020-03-23
+730,JamesWard,Pfizer,2020-04-28
+731,AshleyPoyer,Moderna,2020-05-23
+732,AngelaCoyle,Johnson & Johnson,2020-04-29
+733,AngelaCoyle,Johnson & Johnson,2020-05-20
+734,VickiBarber,Pfizer,2020-09-15
+735,GaryWilliams,Johnson & Johnson,2021-02-25
+736,RitaCloud,Pfizer,2020-05-29
+737,RitaCloud,Pfizer,2020-06-19
+738,MaureenReynolds,Johnson & Johnson,2020-06-18
+739,MaureenReynolds,Johnson & Johnson,2020-07-09
+740,BenjaminMusselwhite,Moderna,2020-04-18
+741,AdamWalsh,Moderna,2020-07-16
+742,AdamWalsh,Moderna,2020-08-06
+743,DavidShoemaker,Pfizer,2020-05-30
+744,DavidShoemaker,Pfizer,2020-06-20
+745,JohnMaia,Moderna,2020-09-30
+746,JamesTodd,Pfizer,2020-04-20
+747,JamesTodd,Pfizer,2020-05-11
+748,SamuelMetcalfe,Moderna,2020-09-26
+749,SamuelMetcalfe,Moderna,2020-10-17
+750,JackPinedo,Pfizer,2020-12-05
+751,JackPinedo,Pfizer,2020-12-26
+752,JamelTauber,Pfizer,2020-04-28
+753,JamelTauber,Pfizer,2020-05-19
+754,AprilBaker,Moderna,2020-09-08
+755,AlmaChan,Johnson & Johnson,2020-03-31
+756,DonaldMurray,Pfizer,2021-02-01
+757,DonaldMurray,Pfizer,2021-02-22
+758,NancySmith,Johnson & Johnson,2021-02-13
+759,NancySmith,Johnson & Johnson,2021-03-06
+760,LeslieWilliams,Moderna,2020-08-16
+761,LeslieWilliams,Moderna,2020-09-06
+762,EddieSchug,Pfizer,2020-03-19
+763,JonellCline,Moderna,2020-06-10
+764,JonellCline,Moderna,2020-07-01
+765,StephenYoung,Moderna,2020-08-28
+766,StephenYoung,Moderna,2020-09-18
+767,MarkLapuerta,Pfizer,2020-07-04
+768,MarkLapuerta,Pfizer,2020-07-25
+769,JasonRichards,Johnson & Johnson,2021-01-25
+770,KatrinaZollars,Johnson & Johnson,2020-08-09
+771,KatrinaZollars,Johnson & Johnson,2020-08-30
+772,BrookeSuggs,Johnson & Johnson,2020-11-20
+773,DonaldMyatt,Pfizer,2020-03-28
+774,JamesJackson,Pfizer,2020-05-27
+775,AnnaPerry2,Johnson & Johnson,2020-09-11
+776,AnnaPerry2,Johnson & Johnson,2020-10-02
+777,LoriReding,Moderna,2020-07-02
+778,DennisMonroe,Moderna,2020-05-20
+779,GailBeatty,Moderna,2020-03-10
+780,JanetHelems,Pfizer,2020-07-03
+781,JanetHelems,Pfizer,2020-07-24
+782,KennethWheeles,Pfizer,2021-01-25
+783,KennethWheeles,Pfizer,2021-02-15
+784,EddieHarmon,Pfizer,2020-10-21
+785,EddieHarmon,Pfizer,2020-11-11
+786,LisaArmentrout,Johnson & Johnson,2020-10-06
+787,SamuelRuiz,Pfizer,2020-08-12
+788,SamuelRuiz,Pfizer,2020-09-02
+789,ErinRodriguez,Johnson & Johnson,2020-11-20
+790,ErinRodriguez,Johnson & Johnson,2020-12-11
+791,MarianaHagadone,Moderna,2020-05-06
+792,MarianaHagadone,Moderna,2020-05-27
+793,JulieKing,Johnson & Johnson,2020-03-30
+794,JulieKing,Johnson & Johnson,2020-04-20
+795,HildaOliver,Johnson & Johnson,2021-02-11
+796,HildaOliver,Johnson & Johnson,2021-03-04
+797,VickyRoot,Johnson & Johnson,2021-01-23
+798,LinaRife,Johnson & Johnson,2020-10-03
+799,LinaRife,Johnson & Johnson,2020-10-24
+800,ClarenceHuynh,Johnson & Johnson,2020-06-28
+801,ClarenceHuynh,Johnson & Johnson,2020-07-19
+802,MatthewLister,Johnson & Johnson,2020-10-14
+803,MatthewLister,Johnson & Johnson,2020-11-04
+804,MyronLandis,Moderna,2021-03-04
+805,AlbertLodge,Pfizer,2020-04-28
+806,MaryCarrasco,Johnson & Johnson,2020-11-05
+807,JenniferCotton,Johnson & Johnson,2020-09-18
+808,JenniferCotton,Johnson & Johnson,2020-10-09
+809,JohnnyWingo,Moderna,2020-07-20
+810,JohnnyWingo,Moderna,2020-08-10
+811,PatrickCameron,Moderna,2020-10-17
+812,PatrickCameron,Moderna,2020-11-07
+813,MarkOtto,Pfizer,2020-04-24
+814,MarkOtto,Pfizer,2020-05-15
+815,ErinDixon,Johnson & Johnson,2020-08-23
+816,RichardFrye,Moderna,2020-12-21
+817,RichardFrye,Moderna,2021-01-11
+818,MarianneGoede,Pfizer,2020-10-14
+819,MarianneGoede,Pfizer,2020-11-04
+820,VeronicaPowell,Johnson & Johnson,2020-08-26
+821,VeronicaPowell,Johnson & Johnson,2020-09-16
+822,DesireeMathis,Moderna,2020-11-09
+823,DesireeMathis,Moderna,2020-11-30
+824,MaryCarpenter,Moderna,2020-03-02
+825,AnitaBoettcher,Johnson & Johnson,2020-05-30
+826,RobertCaldwell,Pfizer,2021-01-20
+827,RobertCaldwell,Pfizer,2021-02-10
+828,BrianHardison,Moderna,2020-11-05
+829,CarmenLawson,Johnson & Johnson,2020-08-28
+830,CarmenLawson,Johnson & Johnson,2020-09-18
+831,ChristopherMacpherson,Johnson & Johnson,2020-03-25
+832,ChristopherMacpherson,Johnson & Johnson,2020-04-15
+833,KevinHarwell,Johnson & Johnson,2021-03-06
+834,BruceShockey,Pfizer,2020-08-01
+835,FelipeJohnson,Moderna,2021-02-19
+836,DouglasRodriguez,Johnson & Johnson,2020-09-14
+837,DouglasRodriguez,Johnson & Johnson,2020-10-05
+838,RuthGarcia,Pfizer,2021-02-21
+839,RebeccaRamirez,Pfizer,2020-07-01
+840,RollandDansie,Pfizer,2020-08-01
+841,SaraPugh,Johnson & Johnson,2020-10-09
+842,SaraPugh,Johnson & Johnson,2020-10-30
+843,WillieBielecki,Moderna,2020-03-11
+844,WillieBielecki,Moderna,2020-04-01
+845,PollyZimmerman,Moderna,2020-05-28
+846,CecilDipietro,Moderna,2020-03-22
+847,CecilDipietro,Moderna,2020-04-12
+848,PriscillaYoung,Pfizer,2020-11-11
+849,AndrewMonarrez,Moderna,2020-07-29
+850,AndrewMonarrez,Moderna,2020-08-19
+851,IrmaClark,Moderna,2020-05-10
+852,JeanPerez,Pfizer,2021-03-04
+853,WandaBrink,Moderna,2020-09-23
+854,CynthiaPowell,Johnson & Johnson,2020-03-12
+855,CynthiaPowell,Johnson & Johnson,2020-04-02
+856,RoseannHolt,Pfizer,2021-01-03
+857,ElizabethYoon,Pfizer,2020-10-10
+858,GeorgeOpie,Moderna,2020-07-29
+859,LindaEllis,Johnson & Johnson,2021-01-24
+860,LindaEllis,Johnson & Johnson,2021-02-14
+861,AngeloLeaks,Moderna,2020-05-22
+862,AngeloLeaks,Moderna,2020-06-12
+863,RobertFielden,Pfizer,2020-12-05
+864,RobertFielden,Pfizer,2020-12-26
+865,JoyceWebber,Pfizer,2020-06-23
+866,RyanKelly,Moderna,2020-07-29
+867,RyanKelly,Moderna,2020-08-19
+868,ElaineDossey,Moderna,2020-03-01
+869,ZelmaTracy,Moderna,2020-06-25
+870,ZelmaTracy,Moderna,2020-07-16
+871,LindaRivera,Pfizer,2020-07-22
+872,LindaRivera,Pfizer,2020-08-12
+873,AngelaNguyen,Moderna,2020-05-17
+874,ElizabethAdams,Moderna,2020-04-17
+875,VernonJensen,Johnson & Johnson,2020-06-22
+876,VernonJensen,Johnson & Johnson,2020-07-13
+877,RalphWeiss,Pfizer,2021-03-02
+878,GarrettDobbins,Pfizer,2020-05-31
+879,GarrettDobbins,Pfizer,2020-06-21
+880,NoelPhipps,Johnson & Johnson,2020-04-24
+881,NoelPhipps,Johnson & Johnson,2020-05-15
+882,WarrenTrinidad,Pfizer,2020-10-25
+883,WarrenTrinidad,Pfizer,2020-11-15
+884,AlbertGarcia,Pfizer,2020-03-27
+885,AlbertGarcia,Pfizer,2020-04-17
+886,KathrynWard,Moderna,2021-02-02
+887,DianneReeves,Johnson & Johnson,2020-04-04
+888,MichaelClark,Johnson & Johnson,2020-11-10
+889,JeffreyReis,Pfizer,2020-08-19
+890,JeffreyReis,Pfizer,2020-09-09
+891,GladysDonovan,Pfizer,2021-01-26
+892,GladysDonovan,Pfizer,2021-02-16
+893,LanceMoran,Moderna,2021-02-07
+894,KarlaJoyce,Pfizer,2020-11-23
+895,MarthaWashington,Johnson & Johnson,2020-06-26
+896,MarthaWashington,Johnson & Johnson,2020-07-17
+897,CynthiaPruett,Moderna,2020-06-17
+898,HoseaAnderson,Johnson & Johnson,2020-11-26
+899,PeggyCournoyer,Johnson & Johnson,2020-12-06
+900,PeggyCournoyer,Johnson & Johnson,2020-12-27
+901,WillieMccloud,Johnson & Johnson,2020-07-13
+902,WillieMccloud,Johnson & Johnson,2020-08-03
+903,JohnnyReny,Moderna,2020-04-24
+904,ElizabethGargus,Johnson & Johnson,2020-07-25
+905,MathewTurner,Pfizer,2020-06-25
+906,DaleWhite,Moderna,2020-07-14
+907,JamesCollins,Pfizer,2021-02-08
+908,DoloresWestendorf,Moderna,2020-09-01
+909,DoloresWestendorf,Moderna,2020-09-22
+910,LorenaSpencer,Pfizer,2020-03-11
+911,SamanthaStile,Johnson & Johnson,2020-12-11
+912,SharonHarrington,Moderna,2020-04-30
+913,BerthaGellert,Johnson & Johnson,2020-08-28
+914,BerthaGellert,Johnson & Johnson,2020-09-18
+915,WilliamSteik,Pfizer,2020-03-01
+916,RaymondBlack,Moderna,2020-07-28
+917,RaymondBlack,Moderna,2020-08-18
+918,TimothySosebee,Pfizer,2020-05-16
+919,JeffreyLanehart,Moderna,2020-03-28
+920,KarlWilliams,Pfizer,2020-10-31
+921,KarlWilliams,Pfizer,2020-11-21
+922,AlexandriaGarcia,Pfizer,2020-03-31
+923,JuanPousson,Pfizer,2020-03-01
+924,JuanPousson,Pfizer,2020-03-22
+925,RaymondLugo,Moderna,2020-10-07
+926,RaymondLugo,Moderna,2020-10-28
+927,KennethBureau,Johnson & Johnson,2020-09-30
+928,JamesHilliard,Pfizer,2020-04-28
+929,JamesHilliard,Pfizer,2020-05-19
+930,LeviBurt,Johnson & Johnson,2021-01-25
+931,JohnLawlor,Johnson & Johnson,2020-08-21
+932,HarlanNazario,Moderna,2020-05-01
+933,RoseWheeler,Johnson & Johnson,2020-10-06
+934,JeffJohnson,Moderna,2020-12-29
+935,JeffJohnson,Moderna,2021-01-19
+936,AmericaRogers,Moderna,2020-07-25
+937,AmericaRogers,Moderna,2020-08-15
+938,DoyleEast,Johnson & Johnson,2020-12-15
+939,AnitaCarver,Johnson & Johnson,2021-01-06
+940,DonaldLittle,Pfizer,2020-06-02
+941,NellieSpence,Johnson & Johnson,2021-03-01
+942,KathleenConde,Johnson & Johnson,2021-02-11
+943,KathleenConde,Johnson & Johnson,2021-03-04
+944,TyishaSpiva,Moderna,2020-04-07
+945,TyishaSpiva,Moderna,2020-04-28
+946,SherriLee,Johnson & Johnson,2020-06-17
+947,DorothyLeggette,Johnson & Johnson,2020-08-08
+948,LauraStultz,Johnson & Johnson,2020-10-22
+949,LauraStultz,Johnson & Johnson,2020-11-12
+950,JesusFields,Pfizer,2020-12-29
+951,CharlesBeyett,Moderna,2021-03-04
+952,DonShowalter,Pfizer,2020-12-25

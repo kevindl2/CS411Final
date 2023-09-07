@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>{{first_name}} {{last_name}}'s Bubbles</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" href="{{ url_for('static', filename='img/cs.ico') }}">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/bubbles.css') }}">
+
+    </head>
+
+    <body>
+
+    <main role="main" class="container extra-bottom">
+      <h1 class="mt-5">{{first_name}} {{last_name}}'s Bubbles</h1>
+      <p hidden id="user_id">{{user_id}}</p>
+    </main>
+    
+
+    <div class="container">    
+        
+        <!-- Button trigger modal -->
+        <div style="text-align: right;">
+            <button style='float: left;' type="button" class="btn btn-outline-info btn-sm"><a href="../../profile/{{user_id}}">Go Back</a></button>
+            <button type="button" class="btn btn-outline-info btn-sm" data-bs-toggle="modal" data-bs-target="#new-bubble-modal" data-source="New Bubble">New Bubble</button>
+        </div>
+
+        
+        <div class="modal fade" id="new-bubble-modal" tabindex="-1" aria-labelledby="Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="Label">Add a bubble</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="task-form-display">Bubble Name</span>
+                    <input id="bubble_name" type="text" class="form-control" placeholder="Bubble name" aria-label="bubble-name" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="task-form-display">Bubble Description</span>
+                    <input id="bubble_description" type="text" class="form-control" placeholder="Bubble description" aria-label="bubble-description" aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button id="submit-bubble" type="button" class="btn btn-primary">Create Bubble</button>
+            </div>
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+    <!--Bubbles-->
+    <div class="container table-responsive">          
+    <table class="table">
+        <thead>
+        <tr>
+            <th class="bubble-name">Name</th>
+            <th class="bubble-description">Description</th>
+            <th class="num-users">Number of Users</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        {% for bubble in bubbles %}
+            <tr>
+                <td><a href="../bubble-page/{{user_id}}/{{bubble.bubble_id}}">{{bubble.name}}</a></td>
+                <td>{{bubble.description}}</td>
+                <td>{{bubble.num_users}}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    </div>
+
+  </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='script/user_bubbles.js') }}"></script>
+
+</html>

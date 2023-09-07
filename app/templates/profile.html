@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Profile Page</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" href="{{ url_for('static', filename='img/cs.ico') }}">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/profile.css') }}">
+
+        {% if is_vac %}
+            <style>
+                body {
+                    background-color: green;
+                }
+            </style>
+        
+        {% elif is_infected %}
+            <style>
+                body {
+                    background-color: red;
+                }
+            </style>
+
+
+        {% elif risk %}
+            <style>
+                body {
+                    background-color: orange;
+                }
+            </style>
+        {%endif%}
+    </head>
+
+    {% if is_vac %}
+        <div style="background-color: white ; padding: 10px; border: 5px solid green; font-size: 48px; text-align: center; color: green"> Vaccinated </div>
+    {% elif is_infected %}
+        <div style="background-color: white; padding: 10px; border: 5px solid red; font-size: 48px; text-align: center; color: red"> Infected </div>
+
+
+    {% elif risk %}
+        <div style="background-color: white; padding: 10px; border: 5px solid orange; font-size: 48px; text-align: center; color: orange"> At Risk </div>
+
+    {%endif%}
+
+    <body>
+
+        <div class="modal fade" id="first-name-modal" tabindex="-1" aria-labelledby="Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="Label">Edit First Name</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+    
+                <div class="modal-body">
+                    <div class="input-group mb-3">
+                        
+                        <input type="text" class="form-control" placeholder="{{user.first_name}}" aria-label="first-name" aria-describedby="basic-addon1">
+                        
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button id="submit-first-name" data-source="{{user.user_id}}" type="button" class="btn btn-primary">Edit</button>
+                </div>
+                </div>
+            </div>
+            </div>
+    
+        </div>
+
+        <div class="modal fade" id="last-name-modal" tabindex="-1" aria-labelledby="Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="Label">Edit Last Name</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+    
+                <div class="modal-body">
+                    <div class="input-group mb-3">
+                        
+                        <input type="text" class="form-control" placeholder="{{user.last_name}}" aria-label="last-name" aria-describedby="basic-addon1">
+                        
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button id="submit-last-name" data-source="{{user.user_id}}" type="button" class="btn btn-primary">Edit</button>
+                </div>
+                </div>
+            </div>
+            </div>
+    
+        </div>
+
+        <div class="modal fade" id="email-modal" tabindex="-1" aria-labelledby="Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="Label">Edit Email Adress</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+    
+                <div class="modal-body">
+                    <div class="input-group mb-3">
+                        
+                        <input type="text" class="form-control" placeholder="{{user.email}}" aria-label="first-name" aria-describedby="basic-addon1">
+                        
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button id="submit-email" data-source="{{user.user_id}}" type="button" class="btn btn-primary">Edit</button>
+                </div>
+                </div>
+            </div>
+            </div>
+    
+        </div>
+
+        <div class="modal fade" id="phone-modal" tabindex="-1" aria-labelledby="Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="Label">Edit Phone Number</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+    
+                <div class="modal-body">
+                    <div class="input-group mb-3">
+                        
+                        <input type="text" class="form-control" placeholder="{{user.phone_number}}" aria-label="first-name" aria-describedby="basic-addon1">
+                        
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button id="submit-phone" data-source="{{user.user_id}}" type="button" class="btn btn-primary">Edit</button>
+                </div>
+                </div>
+            </div>
+            </div>
+    
+        </div>
+
+        <div class="modal fade" id="password-modal" tabindex="-1" aria-labelledby="Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="Label">New Password</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+    
+                <div class="modal-body">
+                    <div class="input-group mb-3">
+                        
+                        <input type="text" class="form-control" placeholder="New Password" aria-label="first-name" aria-describedby="basic-addon1">
+                        
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button id="submit-password" data-source="{{user.user_id}}" type="button" class="btn btn-primary">Edit</button>
+                </div>
+                </div>
+            </div>
+            </div>
+    
+        </div>
+    
+        <div class="card">
+            
+            <h1>{{user.first_name}} {{user.last_name}}</h1>
+            <p> User ID:  {{user.user_id}}<a  href='../'><button type="button" class= "btn btn-outline-info btn-sm">
+                <span class="glyphicon glyphicon-log-out"></span> Log out
+              </button></a></p>
+            <p>First Name   : {{user.first_name}}<button type="button" id='editFirstName' class="btn btn-outline-info btn-sm" data-bs-toggle="modal" data-bs-target="#first-name-modal" data-source="{{user.user_id}}" data-content="{{user.first_name}}"><i class="fa fa-pen fa-1" aria-hidden="true"></i></button></p>
+            <p>Last Name    : {{user.last_name}} <button type="button" id='editLastName' class="btn btn-outline-info btn-sm" data-bs-toggle="modal" data-bs-target="#last-name-modal" data-source="{{user.user_id}}" data-content="{{user.first_name}}"><i class="fa fa-pen fa-1" aria-hidden="true"></i></button></p>
+
+            <p>Email Address: {{user.email}} <button type="button" id='editEmail' class="btn btn-outline-info btn-sm" data-bs-toggle="modal" data-bs-target="#email-modal" data-source="{{user.user_id}}" data-content="{{user.first_name}}"><i class="fa fa-pen fa-1" aria-hidden="true"></i></button></p>
+            <p>Phone Number : {{user.phone_number}} <button type="button" id='editPhone' class="btn btn-outline-info btn-sm" data-bs-toggle="modal" data-bs-target="#phone-modal" data-source="{{user.user_id}}" data-content="{{user.first_name}}"><i class="fa fa-pen fa-1" aria-hidden="true"></i></button></p>
+
+            <p>Change Password<button type="button" id='editPassword' class="btn btn-outline-info btn-sm" data-bs-toggle="modal" data-bs-target="#password-modal" data-source="{{user.user_id}}" data-content="{{user.first_name}}"><i class="fa fa-pen fa-1" aria-hidden="true"></i></button></p>
+            
+          </div>
+        <div class = 'card'>
+            <p> {{user.first_name}} {{user.last_name}}'s Bubbles  <button type="button" id='goToBubble' class="btn btn-outline-info btn-sm"  data-source="{{user.user_id}}" data-content="{{user.first_name}}"><i class="fa fa-arrow-right" aria-hidden="true"></i></button></p>
+            <p> {{user.first_name}} {{user.last_name}}'s Interactions  <button type="button" id='goToInteractions' class="btn btn-outline-info btn-sm" data-bs-toggle="modal" data-bs-target="#login-modal" data-source="{{user.user_id}}" data-content="{{user.first_name}}"><i class="fa fa-arrow-right" aria-hidden="true"></i></button></p>
+            <p> {{user.first_name}} {{user.last_name}}'s Test Results  <button type="button" id='goToTests' class="btn btn-outline-info btn-sm" data-bs-toggle="modal" data-bs-target="#login-modal" data-source="{{user.user_id}}" data-content="{{user.first_name}}"><i class="fa fa-arrow-right" aria-hidden="true"></i></button></p>
+            <p> {{user.first_name}} {{user.last_name}}'s Vaccinations  <button type="button" id='goToVaccinations' class="btn btn-outline-info btn-sm" data-bs-toggle="modal" data-bs-target="#login-modal" data-source="{{user.user_id}}" data-content="{{user.first_name}}"><i class="fa fa-arrow-right" aria-hidden="true"></i></button></p>
+            <p> {{user.first_name}} {{user.last_name}}'s Statistics  <button type="button" id='goToStats' class="btn btn-outline-info btn-sm" data-bs-toggle="modal" data-bs-target="#login-modal" data-source="{{user.user_id}}" data-content="{{user.first_name}}"><i class="fa fa-arrow-right" aria-hidden="true"></i></button></p>
+        </div>
+          
+    
+  </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='script/profile.js') }}"></script>
+
+</html>
